@@ -1,0 +1,180 @@
+
+/* BB BINGUS IS SOOOO KYUTE */
+
+h2 {
+    z-index: 2;
+    padding: 4em 0em 0em 0em;
+}
+
+.hero-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    min-height: 35vh;
+    background-image: url('images/testemily.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    opacity: 0.8;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    min-height: 45vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: #eeeeee;
+    font-family: 'Playfair Display', serif, Georgia, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.btn {
+    z-index: 2;
+    margin: 12px;
+    border: none;
+}
+
+.insta-btn {
+    background: #C13584;
+    background: linear-gradient(
+    45deg, 
+    #405DE6 0%, 
+    #5851DB 10%, 
+    #833AB4 30%, 
+    #C13584 50%, 
+    #FD1D1D 70%, 
+    #F56040 85%, 
+    #FCAF45 100%
+    );
+}
+
+.hero-buttons {
+    z-index: 2;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+.float-box {
+    z-index: 3;
+    margin-top: -50px;
+}
+
+.about-text {
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+.about-text-body{
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.history-container {
+    display: block;
+}
+
+.history-text-group {
+    display: block;
+}
+
+.history-text {
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+.history-text-body {
+    margin: 0 1rem 1rem 1rem;
+}
+
+.emilys-history-photo {
+    float: right;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 0 1rem 1rem;
+    border-radius: 50% !important;
+}
+
+@media (min-width: 700px) {
+    .hero-container::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        min-height: 45vh;
+        background-image: url('images/testemily.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: blur(4px);
+        opacity: 0.8;
+        transform: scale(1.1);
+        z-index: 1;
+    }
+
+    .hero-container {
+        position: relative;
+        min-height: 75vh;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-buttons {
+        z-index: 2;
+        margin-top: -200px;
+        margin-bottom: 100px;
+    }
+    
+    .about-text {
+        margin: 6rem 6rem 1rem 6rem;
+    }
+
+    .about-text-body{
+        margin: 0rem 6rem 2rem 6rem;
+    }
+
+    .history-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .history-text-group {
+        flex: 0 0 50%;
+        margin-left: 6rem;
+    }
+
+    .history-text {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .history-text-body {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    .emilys-history-photo {
+        float: none;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin-top: 6rem !important;
+        margin-right: 6rem !important;
+        margin-bottom: 0 !important;
+        margin-left: auto !important;
+        flex: 0 0 35%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
