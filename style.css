@@ -23,7 +23,7 @@ h2 {
 
 .hero-container {
     position: relative;
-    min-height: 45vh;
+    min-height: 55vh;
     overflow: hidden;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ h2 {
 
 .hero-text {
     color: #eeeeee;
-    font-family: 'Playfair Display', serif, Georgia, sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -102,12 +102,84 @@ h2 {
     border-radius: 50% !important;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
     .hero-container::before {
         content: "";
         position: absolute;
         inset: 0;
-        min-height: 45vh;
+        background-image: url('images/testemily.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: blur(4px);
+        opacity: 0.8;
+        transform: scale(1.1);
+        z-index: 1;
+    }
+
+    .hero-container {
+        position: relative;
+        min-height: 85vh;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-buttons {
+        z-index: 2;
+        margin-top: -200px;
+        margin-bottom: 100px;
+    }
+    
+    .about-text {
+        margin: 6rem 6rem 1rem 6rem;
+    }
+
+    .about-text-body{
+        margin: 0rem 6rem 2rem 6rem;
+    }
+
+    .history-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .history-text-group {
+        flex: 0 0 50%;
+        margin-left: 6rem;
+    }
+
+    .history-text {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .history-text-body {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    .emilys-history-photo {
+        float: none;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin-top: 3rem !important;
+        margin-right: 6rem !important;
+        margin-bottom: 0 !important;
+        margin-left: auto !important;
+        flex: 0 0 25%;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    .hero-container::before {
+        content: "";
+        position: absolute;
+        inset: 0;
         background-image: url('images/testemily.png');
         background-size: cover;
         background-position: center center;
@@ -171,10 +243,7 @@ h2 {
         margin-right: 6rem !important;
         margin-bottom: 0 !important;
         margin-left: auto !important;
-        flex: 0 0 35%;
+        flex: 0 0 25%;
     }
 }
 
-@media (min-width: 1200px) {
-
-}
