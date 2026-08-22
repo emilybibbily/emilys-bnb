@@ -30,7 +30,7 @@ h2 {
 }
 
 .hero-text {
-    color: #eeeeee;
+    color: #e0e0e0;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -60,7 +60,7 @@ h2 {
 
 .hero-buttons {
     z-index: 2;
-    margin-top: -100px;
+    margin-top: -140px;
     margin-bottom: 100px;
 }
 
@@ -69,12 +69,8 @@ h2 {
     margin-top: -50px;
 }
 
-.about-text {
+.page-body {
     margin: 1rem 1rem 1rem 1rem;
-}
-
-.about-text-body{
-    margin: 0rem 1rem 1rem 1rem;
 }
 
 .history-container {
@@ -83,14 +79,7 @@ h2 {
 
 .history-text-group {
     display: block;
-}
-
-.history-text {
-    margin: 3rem 1rem 1rem 1rem;
-}
-
-.history-text-body {
-    margin: 0 1rem 1rem 1rem;
+    margin: 3rem 0 0 0;
 }
 
 .emilys-history-photo {
@@ -119,7 +108,7 @@ h2 {
 
     .hero-container {
         position: relative;
-        min-height: 85vh;
+        min-height: 65vh;
         overflow: hidden;
         justify-content: center;
         align-items: center;
@@ -127,16 +116,12 @@ h2 {
 
     .hero-buttons {
         z-index: 2;
-        margin-top: -200px;
+        margin-top: -150px;
         margin-bottom: 100px;
     }
-    
-    .about-text {
-        margin: 6rem 6rem 1rem 6rem;
-    }
 
-    .about-text-body{
-        margin: 0rem 6rem 2rem 6rem;
+    .page-body {
+        margin: 3rem 8rem 1rem 8rem;
     }
 
     .history-container {
@@ -148,7 +133,7 @@ h2 {
 
     .history-text-group {
         flex: 0 0 50%;
-        margin-left: 6rem;
+        margin: 3rem 0 0 0;
     }
 
     .history-text {
@@ -192,7 +177,7 @@ h2 {
 
     .hero-container {
         position: relative;
-        min-height: 75vh;
+        min-height: 85vh;
         overflow: hidden;
         justify-content: center;
         align-items: center;
@@ -200,16 +185,12 @@ h2 {
 
     .hero-buttons {
         z-index: 2;
-        margin-top: -200px;
+        margin-top: -160px;
         margin-bottom: 100px;
     }
-    
-    .about-text {
-        margin: 6rem 6rem 1rem 6rem;
-    }
 
-    .about-text-body{
-        margin: 0rem 6rem 2rem 6rem;
+    .page-body {
+        margin: 6rem 12rem 1rem 12rem;
     }
 
     .history-container {
@@ -217,11 +198,6 @@ h2 {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .history-text-group {
-        flex: 0 0 50%;
-        margin-left: 6rem;
     }
 
     .history-text {
@@ -247,3 +223,65 @@ h2 {
     }
 }
 
+@media (min-width: 1800px) {
+    .hero-container::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('images/testemily.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: blur(4px);
+        opacity: 0.8;
+        transform: scale(1.1);
+        z-index: 1;
+    }
+
+    .hero-container {
+        position: relative;
+        min-height: 85vh;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-buttons {
+        z-index: 2;
+        margin-top: -180px;
+        margin-bottom: 100px;
+    }
+
+    .page-body {
+        margin: 6rem 24rem 1rem 24rem;
+    }
+
+    .history-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .history-text {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    .history-text-body {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    .emilys-history-photo {
+        float: none;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin-top: 6rem !important;
+        margin-right: 6rem !important;
+        margin-bottom: 0 !important;
+        margin-left: auto !important;
+        flex: 0 0 25%;
+    }
+}
